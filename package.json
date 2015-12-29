@@ -1,27 +1,27 @@
 {
-  "name": "passport-local",
+  "name": "passport-local-register",
   "version": "1.0.0",
-  "description": "Local username and password authentication strategy for Passport.",
+  "description": "Local username and password authentication and registration strategy for Passport.",
   "keywords": [
     "passport",
     "local",
     "auth",
     "authn",
     "authentication",
+    "registration",
     "username",
     "password"
   ],
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
+    "name": "Saad Rhoulam",
+    "email": "saad@rhoulam.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-local.git"
+    "url": "git://github.com/srhoulam/passport-local-registration.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-local/issues"
+    "url": "http://github.com/srhoulam/passport-local-registration/issues"
   },
   "license": "MIT",
   "licenses": [
