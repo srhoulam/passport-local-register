@@ -86,7 +86,7 @@ app.post('/login',
 ## Credits
 
 - [Saad Rhoulam](http://github.com/srhoulam), register-on-fail functionality
-- [Jared Hanson](http://github.com/jaredhanson), everything else
+- [Jared Hanson](http://github.com/jaredhanson), **passport-local** strategy
 
 ## License
 
