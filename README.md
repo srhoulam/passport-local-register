@@ -34,12 +34,19 @@ constructor.
 passport.use(new RegisterStrategy(
   function verify(username, password, done) {
     User.findOne({
-      'username': username
+      'username' : username
     }, function(err, user) {
-      if (err) { return done(err); }
-      if (!user) { return done(null, false); }
-      if (!user.verifyPassword(password)) { return done(null, false); }
-      return done(null, user);
+      if (err) {
+        return done(err);
+      }
+      if (!user) {
+        return done(null, false);
+      }
+      if (!user.verifyPassword(password)) {
+        return done(null, false);
+      }
+
+      done(null, user);
     });
   }, function create(username, password, done) {
     User.create({
@@ -69,8 +76,9 @@ application:
 
 ```js
 app.post('/login', 
-  passport.authenticate('localRegister', { failureRedirect: '/login' }),
-  function(req, res) {
+  passport.authenticate('localRegister', {
+    failureRedirect : '/login'
+  }), function(req, res) {
     res.redirect('/');
   });
 ```
