@@ -1,6 +1,6 @@
 {
   "name": "passport-local-register",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Local username and password authentication and registration strategy for Passport.",
   "keywords": [
     "passport",
