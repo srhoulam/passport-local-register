@@ -40,7 +40,7 @@ passport.use(new RegisterStrategy(
         return done(err);
       }
       if (!user) {
-        return done(null, false);
+        return done(); // see section below
       }
       if (!user.verifyPassword(password)) {
         return done(null, false);
@@ -65,6 +65,13 @@ passport.use(new RegisterStrategy(
   }
 ));
 ```
+
+#### `verify` callback
+This is an important note regarding `verify`: invoke the passed-in
+callback (`done`) with `false` as the second argument **only** if
+your code has determined that the account exists and that the
+passwords do not match. Passing `null` as the second argument will
+prevent the strategy from attempting to create an account.
 
 #### Authenticate Requests
 
