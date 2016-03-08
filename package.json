@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/srhoulam/passport-local-registration.git"
+    "url": "git://github.com/srhoulam/passport-local-registration.git#1.0.3"
   },
   "bugs": {
     "url": "http://github.com/srhoulam/passport-local-registration/issues"
